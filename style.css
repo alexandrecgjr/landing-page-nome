@@ -1,0 +1,48 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%; /* Centraliza verticalmente o cabeçalho no meio da tela */
+    left: 50%; /* Centraliza horizontalmente o cabeçalho no meio da tela */
+    transform: translate(-50%, -50%); /* Centraliza completamente o cabeçalho */
+}
+
+.grupo {
+    position: absolute;
+    top: calc(50% + 50px); /* Define a posição abaixo da metade da tela, adicionando um valor de margem para separação */
+    left: 50%; /* Centraliza horizontalmente o grupo no meio da tela */
+    transform: translate(-50%, -50%);
+    float: left;/* Centraliza completamente o grupo */
+    color: white;
+}
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Altere este valor para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.google {
+    position: absolute;
+    top: 0;
+    width: 15px;
+    right: 0;
+}
+
+.imagem-ilustracao img{
+    float: right; /* Faz com que o elemento flutue à direita */
+    width: 45%; /* Define a largura da imagem-ilustracao, ocupando metade da largura disponível */
+}
+
+
