@@ -1,48 +1,133 @@
 body {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     background-image: url('assets/img/background.png');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    max-width: 1216px;
+    width: 100%;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
+    width: 100%;
+    max-width: 1216px;
+    height: 176px;
+    left: 352px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 10%; /* Centraliza verticalmente o cabeçalho no meio da tela */
-    left: 50%; /* Centraliza horizontalmente o cabeçalho no meio da tela */
-    transform: translate(-50%, -50%); /* Centraliza completamente o cabeçalho */
+    align-items: center;
+    padding: 0 48px;
+}
+
+.conteudo {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1216px;
+    height: 423.8px;
+    top: 320px;
+    left: 352px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grupo {
-    position: absolute;
-    top: calc(50% + 50px); /* Define a posição abaixo da metade da tela, adicionando um valor de margem para separação */
-    left: 50%; /* Centraliza horizontalmente o grupo no meio da tela */
-    transform: translate(-50%, -50%);
-    float: left;/* Centraliza completamente o grupo */
-    color: white;
+    width: fit-content;
+    height: fit-content;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao_grupo {
+    width: 502px;
+    height: 315px;
+    gap: 32px;
+}
+
+.botoes {
+    width: fit-content;
+    height: fit-content;
+    gap: 32px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.titulo {
+    width: fit-content;
+    height: fit-content;
+    gap: 8px;
+}
+
+.titulo_autor {
+    width: 174px;
+    height: 27px;
+    font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.24px;
+}
+
+.titulo_filme {
+    width: 445px;
+    height: 140px;
+    font-family: 'Andada Pro', sans-serif; /* Fonte Andada Pro */
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 70.4px;
+}
+
+.informacao {
+    width: 488px;
+    height: 108px;
+    font-family: 'Archivo', sans-serif; /* Fonte Archivo */
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px; /* Altere este valor para o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 166px;
+    height: 80px;
 }
 
-.google {
-    position: absolute;
-    top: 0;
-    width: 15px;
-    right: 0;
+.redes {
+    display: flex;
+    align-items: center;
 }
 
-.imagem-ilustracao img{
-    float: right; /* Faz com que o elemento flutue à direita */
-    width: 45%; /* Define a largura da imagem-ilustracao, ocupando metade da largura disponível */
+.redes img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 232px;
+    margin-right: 24px;
 }
+
+/* Último botão não terá margem direita para evitar espaço extra */
+.redes img:last-child {
+    margin-right: 0;
+}
+
+
+
 
 
